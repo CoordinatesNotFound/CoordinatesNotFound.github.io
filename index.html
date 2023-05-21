@@ -1,209 +1,271 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Coordinates Not Found - Let's go to perfect places</title><meta name="author" content="OliverForest_"><meta name="copyright" content="OliverForest_"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description"><link rel="shortcut icon" href="/img/sailboat.png"><link rel="canonical" href="https://coordinatesnotfound.github.io/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Coordinates Not Found',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-05-22 04:25:14'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/05/22/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-05-21T19:57:49.029Z" itemprop="datePublished">2023-05-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/05/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/05/22/hello-world/" data-id="clhxu9ld90000dvv0afyxayxo" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avartar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-anchor"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-stopwatch"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-compass"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-binoculars"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://coordinates-not-found.notion.site/MusicList-d189d9739f6c4189a89b6ee3be7f6e55"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://coordinates-not-found.notion.site/MovieList-b8cb42f9a4124da5acd809167cb8fc8f"><i class="fa-fw fas fa-film"></i><span> Movie</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://coordinates-not-found.notion.site/BookList-b9ac7fd5f82741c4ba7ce4e7ed9ef3d8"><i class="fa-fw fas fa-book"></i><span> Book</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> Gallery</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://coordinates-not-found.notion.site/BucketList-53eaf29d328d4120bacb9af65daf5fd9"><i class="fa-fw fas fa-trophy"></i><span> Bucket</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-ghost"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/background.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Coordinates Not Found"><span class="site-name">Coordinates Not Found</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-anchor"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-stopwatch"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-compass"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-binoculars"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://coordinates-not-found.notion.site/MusicList-d189d9739f6c4189a89b6ee3be7f6e55"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://coordinates-not-found.notion.site/MovieList-b8cb42f9a4124da5acd809167cb8fc8f"><i class="fa-fw fas fa-film"></i><span> Movie</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://coordinates-not-found.notion.site/BookList-b9ac7fd5f82741c4ba7ce4e7ed9ef3d8"><i class="fa-fw fas fa-book"></i><span> Book</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> Gallery</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://coordinates-not-found.notion.site/BucketList-53eaf29d328d4120bacb9af65daf5fd9"><i class="fa-fw fas fa-trophy"></i><span> Bucket</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-ghost"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Coordinates Not Found</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/CoordinatesNotFound" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:yinanhu519@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://www.instagram.com/OliverForest__" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout hide-aside" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/05/22/%E9%98%BF%E9%82%A3%E4%BA%9A%EF%BD%9C%E6%BD%AE%E6%B0%B4%E7%AE%B4%E8%A8%80/" title="阿那亚｜潮水箴言">阿那亚｜潮水箴言</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-05-21T18:04:45.000Z" title="Created 2023-05-22 02:04:45">2023-05-22</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Travel%C2%B7%E7%BA%AA%E8%A1%8C/">Travel·纪行</a></span></div><div class="content">·
+凌晨四点半，披上外套，走出旅舍，穿过马路，绕过山丘，踉跄走在细软的沙滩上，来到距离海两到三米左右的区域。这里可以清楚看到潮水退去的痕迹——平整而湿润、前日的人们的足印早已被冲刷干净。
+天空依然是大片的深蓝色，只有海天相接的地方泛起鱼肚白。你想起前夜天空很晴朗，能看到星星，没有一丝云。
+你突然意识到忘带了用来垫屁股的布。懒得回去拿了，于是直接坐在湿润的沙子上。
+距离日出还有半个钟头，无所事事，你望着海水发呆。
+·
+海水翻卷着，冲到脚边，又匆匆退去，流动，持续变换着形态。
+你总是说你喜欢流动。
+你说你喜欢看到生命流动的样子，性格可以是流动的，爱好可以是流动的，关系可以是流动的。
+你说去他妈的一切固化成型的事物——去他妈的成绩单，去他妈的学历，去他妈的国籍，去他妈的宗教，去他妈的父权，去他妈的婚姻，去他妈的“三十岁就应该成家立业”……
+你说流动是自由的，自由怎么不美呢？
+·
+但你望着海浪，为何眼角却留下泪水，像许多个夜里那样。
+是因为太美了吗？
+你说，你有时候真的想不清，流向远方、没有归属的生活，到底是自己的决定，还是被迫选择的宿命。
+摇摇晃晃，此刻你摇摇晃晃，你想起你半年来那些自由旋转 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/27/%E4%B8%8A%E6%B5%B7%E6%BC%82%E6%B5%81%EF%BC%88%E4%B8%89%EF%BC%89/" title="上海漂流（三）">上海漂流（三）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-01-27T02:06:56.000Z" title="Created 2023-01-27 10:06:56">2023-01-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Record%C2%B7%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">Record·日常记录</a></span></div><div class="content">·
+1.6
+最近接了第一个比较正式的任务，所以工作上变得非常忙，晚上九点还要和外国的客户开会；我愈发珍惜属于自己的空余时间，像守财奴一样拾起每一个零碎的时间间隙用来看书、听歌。
+人都是贱的，只有意识到空余时间被压缩的时候才会懂得珍惜。
+·
+·
+·
+1.7
+静安寺比想象中小很多，但足够精致。
+我跟随人流买了一把香，在香炉前点燃，学着别人的样子朝寺里四个方向拜了拜。
+拜完后走上高高的台阶。一只鸟飞上屋檐，金色的屋顶反射着接近黄昏时倾斜的阳光。周围皆是市中心的现代化建筑，静安寺小心翼翼地呵护着袅袅烟火。
+一个奇怪想法闯入脑袋——我在静安寺烧香拜佛，我在网路上找占星师占卜、找人工智能抽签算命，我焦虑无助时用手在胸前划十字，我向流星祈愿，我向海祈愿，我向叫不出名字的神龛祈愿……如果那些神明都成真了，他们来庇佑我时会不会打起架来。
+·
 
 
+·
+·
+·
+1.11
+今天是年会日，早上在公司听CEO做完年终总结，中午吃披萨，下午是团建活动，坐大巴去一个运动中心玩了保龄球、飞盘、射箭，我还第一次打了德扑。晚上吃完自助餐就是抽奖，可惜我只抽到一个暖脚器，想着没啥用准备挂闲鱼了。
+除此之外比较开心的是获得机会 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/12/31/%E4%B8%8A%E6%B5%B7%E6%BC%82%E6%B5%81%EF%BC%88%E4%BA%8C%EF%BC%89/" title="上海漂流（二）">上海漂流（二）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-12-31T06:10:06.000Z" title="Created 2022-12-31 14:10:06">2022-12-31</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Record%C2%B7%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">Record·日常记录</a></span></div><div class="content">·
+12.5
+中午搬进了新家，买了一些棉被、晾衣架、杯子等生活必需品，大概收拾一下，然后小睡了一会，空调的制热功能在冬天很实用，我睡得很香。
+·
+·
+·
+12.7
+今天是入职第一天，早上九点半我到了公司，发现公司特别少人（因为大部分人喜欢十点半甚至十一点到公司，，，）。HR糊糊，一个很文静漂亮的女生，看我到了便过来帮我办理入职手续，顺便介绍了公司文化（比如不能称呼“领导”、“老师”，只能叫大名或外号，否则要罚请喝奶茶），还带我逛了一下公司环境：会议室、游戏区、睡觉区、零食区、冰箱、咖啡机、乒乓球室……
+之后我便被指引到自己的办公桌，上面有台ThinkPad和两个显示器。我的同事和leader也陆续到了公司，大家都很热情地向我介绍公司的一些事情，而且很及时地告诉我入职一周内需要完成的任务以及补充的技术栈。
+不低的薪资、扁平化管理、优秀的同事、完备的新人入职培训、舒适的办公环境、轻松的氛围、免费零食和咖啡、晚餐餐补（我入职后才知道有这好事，四舍五入相当于涨薪了hhh），我的入职初体验是开心的！
+那么，作为开发者的牲活就正式开始了。
+·
+·
+·
+12.9
+和我的实习mentor孙磊哥聊了一下 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/12/04/%E4%B8%8A%E6%B5%B7%E6%BC%82%E6%B5%81%EF%BC%88%E4%B8%80%EF%BC%89/" title="上海漂流（一）">上海漂流（一）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-12-04T15:21:05.000Z" title="Created 2022-12-04 23:21:05">2022-12-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Record%C2%B7%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">Record·日常记录</a></span></div><div class="content">·
+11.29
+凌晨五点半，我踏着夜里掉了满地的枝叶逃出了学校，带着一个行李箱一个行李袋一个背包一个挎包在刀子般的冬风中走了四十分钟，手仿佛已经被风割裂。
+到了酒店，我大哭了一场，好像把之前在宿舍里不敢表达的压抑都哭了出来。
+明天就要前往上海，这个我曾经留下过一些美好但我不敢再轻易提及的回忆的城市。我需要在那里找一份实习，租个房子，而对我来说没有任何人可以依靠。相比于一年前我以旅行者的身份来到那里，如今我需要在那里生存。
+网上各种不太好的消息传来。甚至说有些地方在查手机，上海查的严的地方恰好离我将要入住的地方不远。我害怕地将手机上所有外网软件清理干净。
+无力感、漂泊感，我所接触的信息诡异而令人不安，我无法控制我将要面对的一切。我该如何对待这座城市？这座城市又会如何对待我？我该期待那里将要发生的故事吗？
+此刻只有眼泪是真实的。
+·
+·
+·
+11.30
+飞机着陆，才知道上海地面体感温度为4度，还下了小雨，是一个不太热情的迎接呢。
+好在上海的烟火气让人感觉稍微暖和一些：走在黄浦区熟悉的那条街道上，港式茶点和咖啡馆遍布街边，近处的中式建筑与西式建筑交错，远处的大厦从中耸立而出——当我亲身接触并 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/11/23/%E5%AF%84%E7%BB%99%E7%BB%88%E5%B0%86%E5%87%BA%E7%8E%B0%E6%88%96%E8%80%85%E4%B8%8D%E5%87%BA%E7%8E%B0%E7%9A%84%E4%BD%A0/" title="寄给终将出现或者不出现的你">寄给终将出现或者不出现的你</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-23T06:31:17.000Z" title="Created 2022-11-23 14:31:17">2022-11-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/SeaWave%C2%B7%E6%B5%B7%E6%B5%AA%E5%9C%A8%E5%8F%91%E6%84%81/">SeaWave·海浪在发愁</a></span></div><div class="content">嘿，见字如面
+·
+距离上一次给你写信过去才两年不到，这中间却发生了很多事情。特别好笑的是，我有一次误以为遇见了你还热情地打招呼来着，后来才发现认错人了。
+·
+我上大四了，最近完成了本科所有专业课，结了欧陆的留学申请程序，学业方面还算正常进行吧。
+·
+但我跟你讲哦，一周前，我在北京找了一份实习。为了这份实习我其实准备了挺多的，看网课学习技术栈，自己做笔记总结面试考点，为了面试环境专门找了99rmb一次的面试间……通过了三轮面试后，我拿到了offer；那时候我终于松了一口气，以为自己可以满怀热忱走进新的环境认识新的朋友，畅想一天的实习生活是什么样子。但拿到offer三天后，学校改为严格的审批制；在入职前一天晚上，被学校告知不允许出校实习，我被迫放弃。
+·
+这件事让我意识到，这个世界变化得好快好快。如果这个世界有神明，他肯定坏得很，把人类的生活调戏成一场又一场荒诞剧。我们笃定地以为我们能够紧紧抓住的东西，或许下一秒就化为泡影。
+·
+每天早上当我醒来，总是有无数信息像洪水般涌来。前一分钟我收到学校被美国拉入实体名单的消息，这一分钟新闻推送着互联网行业迎来寒冬，下一分钟北京开始全城静默……我时常 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/10/23/test/" title="test">test</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-22T17:31:59.000Z" title="Created 2022-10-23 01:31:59">2022-10-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Record%C2%B7%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">Record·日常记录</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/Travel%C2%B7%E7%BA%AA%E8%A1%8C/">Travel·纪行</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/SeaWave%C2%B7%E6%B5%B7%E6%B5%AA%E5%9C%A8%E5%8F%91%E6%84%81/">SeaWave·海浪在发愁</a></span></div><div class="content">Welcome to the Coordinates Not Found.
+·
+此网站部署在Github，基于Hexo框架搭建，使用Butterfly渲染，部分List页面由Notion制作，用于贮存笔者的生活记录和镜头。
+·
+在Archives归档页，你可以按时间序查看所有文章。
+在Categories分类页，你可以按分类查看文章，目前的分类有：[Record·生活记录]，[Travel·纪行]，[SeaWave·海浪在发愁]
+在List清单下拉列表中，你可以查看所有清单并选择一项进入（除了Gallery选项，网站将会自动跳转至相应的notion页面），目前的清单有[Book书籍清单]，[Music音乐清单]，[Movie电影清单]，[Gallery相片清单]，[Bucket遗愿清单]。
+综上，网站结构如下：
 
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/05/">May 2023</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/05/22/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+Home首页
+Archives归档
+Categories分类
+Record·生活记录
+Travel·纪行
+SeaWave·海浪在发愁
+…
 
 
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+List清单
+Music音乐
+Movie电影
+Book书籍
+Gallery相片
+Film胶片
+Look时尚
+Exhibition展子
+ ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div></main><footer id="footer" style="background: #75a4c3"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By OliverForest_</div><div class="footer_custom_text">海浪在发愁，不停地退后</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  if (true) {
+    typedJSFn.init(["Let&#39;s go to perfect places.","This place cannot be found on the map."])
+  } else {
+    document.getElementById("subtitle").textContent = 'Let&#39;s go to perfect places.'
+  }
+}
+typedJSFn.run(subtitleType)</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
